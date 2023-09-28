@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+@font-face{
+    font-family: outfit;
+    src: url(../images/Outfit-Medium.ttf);
+}
+body{
+    font-family: outfit;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+figure{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+figure img{
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+}
+.box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box__image{
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+}
+.box__view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.view{
+    display: none;
+    width: 45px;
+}
+.box__view:hover{
+    background-color: hsla(178, 100%, 50%,0.6);
+    cursor: pointer;
+    .view{
+        display: block;
+    }
+}
+.box__desc{
+    position: relative;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.box__desc p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    text-align:left;
+    margin-bottom: 15px;
+}
+.box__desc__numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box__desc__numbers img{
+    height: 23px;
+}
+.box__desc__ind{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 110px;
+}
+.box__pers{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.box__pers p{
+    height: fit-content;
+    margin-left: 10px;
+    color: hsl(215, 51%, 70%);
+    font-weight: normal;
+}
+strong{
+    color: hsl(0, 0%, 100%);
+    font-weight: normal;
+}
+.box__pers img{
+    border-radius: 100%;
+    width: 30px;
+    border: 1px solid white;
+}
+hr{
+    margin-bottom: 20px;
+    width: 250px;
+    height: 1px;
+    border: none;
+    background-color: hsla(215, 32%, 27%,0.8);
+}
+h1{
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 18px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 300;
+}
+h3{
+    font-size: 18px;
+    color:hsl(215, 51%, 70%);
+    font-weight: 200;
+}
